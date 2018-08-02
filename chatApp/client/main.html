@@ -1,0 +1,19 @@
+<head>
+  <title>chatApp</title>
+</head>
+
+<body>
+  {{> messages}}
+</body>
+
+<template name="messages">
+  <ul>
+    {{#each messages}} {{> message}} {{/each}}
+  </ul>
+</template>
+
+<template name="message">
+  <li>
+    {{message}}
+  </li>
+</template>
